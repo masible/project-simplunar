@@ -110,3 +110,6 @@ which I can now play on a real Mega Drive.
 
 Thanks to Project Lunar for their work, and making their sources available for
 me to learn from.
+
+Don't forget to download the [Mega Drive](https://manuals.sega.com/megadrivemini/pdf/)
+or [Genesis](https://manuals.sega.com/genesismini/pdf/) game manuals!
