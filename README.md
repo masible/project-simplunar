@@ -8,7 +8,7 @@ The instructions here are based on the code in [Project Lunar](https://modmyclas
 and its [desktop application](https://github.com/Project-Lunar/Project-Lunar-Desktop-App),
 and for Linux systems.
 
-## Prepare the console
+## 1. Prepare the console
 
 Note that you will need to use a micro-USB cable with data lines so that the
 computer can communicate with the console. The bundled SEGA micro-USB cable does
@@ -25,13 +25,13 @@ not have those data lines.
 You can verify that this worked by checking for a device with IDs `1f3a:efe8` in
 the `lsusb` output.
 
-## 1. Software
+## 2. Software
 
 You will need to have the `fel` sunxi tool install. The binary is called
 `sunxi-fel` in some distributions, and is usually packaged under the name
 `sunxi-tools` (in Fedora and Ubuntu at least).
 
-## 2. Boot 
+## 3. Boot
 
 We're now going to make the console boot using a slightly modified kernel and
 initrd which has an ssh server running.
@@ -50,7 +50,7 @@ Executing custom uBoot
 Wait about 30 seconds for boot...
 ```
 
-## 3. Setting up the network
+## 4. Setting up the network
 
 Now that the console has rebooted using the new software, we need to make some
 changes to the network setup. Depending on the underlying OS, things might work
@@ -64,7 +64,7 @@ You should then be able to access the device through ssh:
 $ ssh root@169.254.215.100
 ```
 
-## 4. Get the data files
+## 5. Get the data files
 
 Copy the data files that contain the ROMs, and the binary for the emulator.
 
@@ -81,7 +81,7 @@ $ strings m2engage | grep -A 1 getExistFileDirInMountArchive | tail -n 1
 <encryption key>
 ```
 
-## 5. Unpack the files
+## 6. Unpack the files
 
 We now need to unpack the data files using MArchiveBatchTool.
 
