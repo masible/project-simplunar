@@ -895,7 +895,7 @@
             Miscellaneous utilities.
             </summary>
         </member>
-        <member name="M:MArchiveBatchTool.Utils.CopyStream(System.IO.Stream,System.IO.Stream,System.Int32)">
+        <member name="M:MArchiveBatchTool.Utils.CopyStream(System.IO.Stream,System.IO.Stream,System.Int64)">
             <summary>
             Copies <paramref name="count"/> bytes from <paramref name="input"/> to <paramref name="output"/>.
             </summary>
